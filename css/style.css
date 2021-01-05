@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+#header{
+    width: 100%;
+}
+/*================Navbar start===================*/
+#navbar{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    padding: 0 70px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f7f7f7;
+    z-index: 1;
+}
+#navbar > i{
+    position: absolute;
+    right: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: none;
+    cursor: pointer;
+}
+#navbar .dropdown {
+    flex-grow: 1;
+}
+#navbar .dropdown p{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+#navbar .dropdown i{
+    margin-left: 10px;
+}
+#navbar .logo{
+    flex-grow: 1;
+    text-align: center;
+    padding-right: 40px;
+}
+#navbar .logo h1{
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: #fbc3b2;
+}
+#navbar .menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar .menu ul li{
+    margin-left: 30px;
+}
+#navbar .menu ul li a{
+    color: #000;
+    font-weight: 600;
+}
+#navbar .menu ul li a i{
+    margin-right: 5px;
+}
+/*================Navbar end===================*/
+
+/*================Header-inner start===================*/
+.header-inner{
+    width: 100%;
+    margin: 70px 0 0 0;
+    padding: 30px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+/*================Left-side start===================*/
+.header-inner .left-side{
+    width: 50%;
+}
+.header-inner .left-side ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.header-inner .left-side ul li{
+    margin-right: 5px;
+}
+.header-inner .left-side ul li a{
+    color: #000;
+    font-weight: 600;
+}
+.header-inner .left-side .image{
+    position: relative;
+    width: 80%;
+    padding-top: 40px;
+}
+.header-inner .left-side .image img{
+    width: 100%;
+}
+.header-inner .left-side .image i{
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    top: 60px;
+    right: 20px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+/*================Left-side end===================*/
+
+/*================Right-side start===================*/
+.header-inner .right-side{
+    width: 50%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.header-inner .right-side .heading{
+    width: 50%;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+.header-inner .right-side .heading h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.header-inner .right-side .heading p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.header-inner .right-side .details h3{
+    font-size: 0.9rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.header-inner .right-side .details ul{
+    margin-left: 20px;
+}
+.header-inner .right-side .details ul li{
+    list-style: disc;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.header-inner .right-side .buttons{
+    width: 80%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header-inner .right-side .buttons a:nth-child(1){
+    display: inline-block;
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 1px solid #ebebeb;
+    color: #000;
+}
+.header-inner .right-side .buttons a:nth-child(2){
+    display: inline-block;
+    width: 75%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    background: #d8b4a1;
+    text-align: center;
+}
+.header-inner .right-side .info ul{
+    margin-bottom: 40px;
+}
+.header-inner .right-side .info i{
+    margin-right: 10px;
+}
+.header-inner .right-side .info ul li{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.header-inner .right-side .info > a{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-right: 20px;
+    color: #000;
+    text-decoration: underline;
+}
+/*================Right-side end===================*/
+
+/*================Header-inner end===================*/
+
+
+/*================Media query===================*/
+@media (max-width: 992px){
+    #navbar > i{
+        display: block;
+    }
+    #navbar .menu{
+        display: none;
+    }
+    .header-inner .left-side{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-inner .right-side{
+        width: 80%;
+        margin: 0 auto;
+    }
+}  
+@media (max-width: 768px){
+   .header-inner{
+        padding: 30px 0;
+   }
+   #navbar .logo h1{
+        font-size: 1.8rem;
+}
+}
+@media (max-width: 576px){
+    #navbar .logo h1{
+        font-size: 1.4rem;
+    }
+ }
